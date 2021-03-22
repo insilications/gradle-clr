@@ -14,4 +14,5 @@ if [ "$INSTALLER" = '' ]; then
 else
     echo -e "\e[33m\xE2\x9C\x93 Found gradle-$VERSION-bin.zip\e[m"
     unzip -o gradle-*.zip
+    mv gradle-*/* .
 fi
